@@ -1,6 +1,7 @@
-require './lib/deck'
+require '../lib/deck'
+require '../lib/card'
 
-RSpec.describe Card do
+RSpec.describe Deck do
   it 'exists' do
     card_1 = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
     card_2 = Card.new("The Viking spacecraft sent back to Earth photographs and reports about the surface of which planet?", "Mars", :STEM)
