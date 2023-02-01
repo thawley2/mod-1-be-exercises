@@ -1,6 +1,6 @@
-require '../lib/turn'
-require '../lib/card'
-require '../lib/deck'
+require './lib/turn'
+require './lib/card'
+require './lib/deck'
 
 RSpec.describe Turn do
   it 'exists' do
