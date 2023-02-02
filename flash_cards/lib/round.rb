@@ -13,7 +13,7 @@ class Round
     turn = Turn.new(guess, current_card)
     @turns << turn
     @count += 1
-    @turns.last
+    turn
   end
 
   def number_correct
@@ -36,5 +36,11 @@ class Round
   
   def number_of_turns_by_category(category)
     @turns.select {|turn| turn.card.category == category}.length
+  end
+  def select_all_categories_in_round
+    @deck.cards.map {|card| card.category}.uniq
+  end
+  def percent_correct_by_each_category
+    select_all_categories_in_round.map {|category| "#{category} - #{percent_correct_by_category(category)}% correct"}
   end
 end
