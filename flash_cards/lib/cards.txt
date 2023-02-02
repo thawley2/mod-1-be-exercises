@@ -1,4 +1,10 @@
 What is 5 + 5?,10,STEM
-What is Rachel's favorite animal?,red panda,Turing Staff
-What is Mike's middle name?,nobody knows,Turing Staff
-What cardboard cutout lives at Turing?,Justin bieber,PopCulture
+What is Thomas' favorite movie?,tremors,Movies
+What does “www” stand for in a website browser?,world wide web,Technology
+How long is an Olympic swimming pool (in meters)?,50,Sports
+What geometric shape is generally used for stop signs?,octogon,Maths
+Who was the first woman to win a Nobel Prize (in 1903),marie curie,Science
+What is the name of the World's largest ocean?,pacific ocean,Geography
+What is the rarest M&M color?,brown,Trivia
+Which country consumes the most chocolate per capita?,Switzerland,Geography
+What was the first soft drink in space?,coca cola,Trivia

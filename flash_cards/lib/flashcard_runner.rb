@@ -15,7 +15,7 @@ def start
   while round.turns.length < round.deck.count
   p "This is card number #{round.count} out of #{round.deck.count}."
   p "Question: #{round.current_card.question}"
-  guess = gets.chomp
+  guess = gets.chomp.downcase
   round.take_turn(guess)
   p round.turns.last.feedback
   end
