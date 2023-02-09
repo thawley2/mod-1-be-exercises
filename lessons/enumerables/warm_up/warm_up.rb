@@ -5,6 +5,11 @@ kardashians = ["kris", "kim", "kourtney", "khloe", "rob"]
 
 def upcase_names(names)
  # your code here
+ upcase_names = []
+ names.each do |name|
+  upcase_names << name.upcase
+ end
+ upcase_names
 end 
 
 p upcase_names(kardashians)
@@ -22,7 +27,11 @@ p upcase_names(kardashians)
 pets = ["Brutus", "Lucky", "Goldie", "Pepper", "Odie"]
 
 def names_ending_in_ie(names)
- # your code here
+  ie_names = []
+  names.each do |name|
+   ie_names << name if name.end_with?("ie")
+  end
+  ie_names
 end 
 
 p names_ending_in_ie(pets)
@@ -40,7 +49,12 @@ p names_ending_in_ie(pets)
 nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
 def first_num_thats_square_is_above_100(nums)
-
+  numbers = []
+  nums.each do |num|
+    numbers << num if num ** 2 > 100
+   break if numbers.length == 1
+  end
+  numbers
 end 
 
 p first_num_thats_square_is_above_100(nums)
