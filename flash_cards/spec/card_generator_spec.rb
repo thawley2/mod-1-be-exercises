@@ -8,6 +8,7 @@ RSpec.describe CardGenerator do
       expect(cards).to be_instance_of(CardGenerator)
     end
   end
+  
   describe '#cards' do
     it 'can return an array of card instances' do
 
