@@ -16,4 +16,8 @@ class Team
   def add_player(player)
     @players << player
   end
+
+  def players_by_position(position)
+    @players.select {|player| player.position == position}
+  end
 end
