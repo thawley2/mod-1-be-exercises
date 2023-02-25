@@ -11,3 +11,9 @@ nested_animals = [[:dog, :cat, :zebra], [:quokka, :unicorn, :bear]]
 
 
 # 3. Return a hash where the keys are the animal, and the values are the length. ex: {dog: 3, cat: 3, zebra: 5 ... }
+
+animals = nested_animals.flatten.to_h do |animal|
+  [animal, animal.length]
+end
+
+p animals
